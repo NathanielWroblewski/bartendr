@@ -1,7 +1,6 @@
 $(document).ready(beginTyping)
 
 function beginTyping () {
-
   function toType(){
     $('input#search-bar').attr('placeholder', '');
     var chars = sentencesToAutofill[index].split('');
@@ -25,8 +24,3 @@ function beginTyping () {
   setInterval(function() {toType()}, 4000)
 
 }
-
-$("body").on("submit", function(e){
-  e.preventDefault();
-  alert("Implement Tumbler")
-})
